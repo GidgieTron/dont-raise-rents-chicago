@@ -4,13 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Don't Raise Rents, Chicago!</title>
-<meta name="description" content="Mayor Johnson's Protecting Renters Ordinance (PRO) will raise your rent. Tell your Alderman to vote NO before the September 16 City Council vote.">
+<meta name="description" content="Mayor Johnson's Protecting Renters Ordinance (PRO) will raise your rent. Tell your Alderman to vote NO before the City Council vote this fall.">
+<link rel="canonical" href="https://gidgietron.github.io/dont-raise-rents-chicago/">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#15110f">
+
 <meta property="og:title" content="Don't Raise Rents, Chicago!">
 <meta property="og:description" content="Mayor Johnson's Protecting Renters Ordinance (PRO) will raise your rent. Tell your Alderman to vote NO.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Don't Raise Rents, Chicago!">
+<meta property="og:url" content="https://gidgietron.github.io/dont-raise-rents-chicago/">
+<meta property="og:image" content="https://gidgietron.github.io/dont-raise-rents-chicago/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mayor Johnson's ordinance will raise your rent. Contact your Alderman.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gidgietron.github.io/dont-raise-rents-chicago/og-image.png">
 <style>
   *{ box-sizing:border-box; }
-  html,body{ margin:0; padding:0; }
+  html,body{ margin:0; padding:0; background:#15110f; }
   body{
     font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
@@ -33,6 +48,8 @@
   .facts-list{ list-style:none; margin:0; padding:0; display:grid; gap:.9rem; }
   .facts-list li{ display:flex; gap:.85rem; align-items:flex-start; }
   .facts-footnote{ font-size:.85rem; max-width:64ch; }
+  .src{ font-size:.78rem; white-space:nowrap; }
+  .src + .src{ margin-left:.5rem; }
   .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
   .card{ }
   .card-eyebrow{ margin:0 0 .6rem; }
@@ -41,9 +58,10 @@
   details.script summary{ cursor:pointer; font-weight:600; }
   details.script p{ font-size:.92rem; line-height:1.6; }
   .share-row{ margin-top:2rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap; font-size:.9rem; }
-  .share-buttons{ display:flex; gap:.5rem; }
-  .share-buttons button{ font:inherit; cursor:pointer; border-radius:999px; padding:.4rem .9rem; font-size:.82rem; }
-  .site-footer{ font-size:.8rem; opacity:.7; }
+  .share-buttons{ display:flex; gap:.5rem; flex-wrap:wrap; }
+  .share-buttons button,
+  .share-buttons a{ font:inherit; cursor:pointer; border-radius:999px; padding:.4rem .9rem; font-size:.82rem; text-decoration:none; display:inline-block; }
+  .site-footer{ font-size:.85rem; }
   .site-footer p{ max-width:70ch; margin:0; }
 
   /* URGENT & BOLD */
@@ -97,6 +115,9 @@
     content:"▲"; color:var(--accent-2); font-size:.7rem; margin-top:.35rem;
   }
   main .facts-footnote{ color:var(--fg-muted); margin-top:1.4rem; }
+  main .facts-footnote a{ color:var(--accent-2); }
+  main .src{ color:var(--accent-2); text-decoration:underline; text-underline-offset:2px; }
+  main .src:hover{ color:var(--fg); }
   main .why-matters h2{ font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3vw,2.3rem); margin:0 0 1.8rem; }
   main .card{
     background:var(--bg-alt); border:1px solid var(--border); border-top:5px solid var(--accent); padding:1.8rem;
@@ -110,8 +131,11 @@
   main .take-action > p{ color:var(--fg-muted); }
   main details.script{ color:var(--fg-muted); }
   main details.script summary{ color:var(--fg); }
-  main .share-buttons button{ background:transparent; border:1px solid var(--border); color:var(--fg); }
-  main .site-footer{ padding:2rem clamp(1.25rem,5vw,4rem) 3rem; border-top:1px solid var(--border); }
+  main .share-buttons button,
+  main .share-buttons a{ background:transparent; border:1px solid var(--border); color:var(--fg); }
+  main .share-buttons button:hover,
+  main .share-buttons a:hover{ border-color:var(--fg); background:var(--bg-alt); }
+  main .site-footer{ padding:2rem clamp(1.25rem,5vw,4rem) 3rem; border-top:1px solid var(--border); color:var(--fg); }
 
   @media (max-width:640px){
     .site-header{ flex-wrap:wrap; }
@@ -144,13 +168,23 @@
   <section id="ordinance" class="facts">
     <h2>What PRO actually does</h2>
     <ul class="facts-list">
-      <li>Creates a citywide rental registry — landlords pay a new annual fee to register every unit.</li>
-      <li>Requires "just cause" for eviction or lease non-renewal, with relocation assistance owed for no-fault reasons like renovation, demolition, or condo conversion.</li>
-      <li>Opens a new city office to investigate and enforce landlord-tenant complaints.</li>
-      <li>Applies to every rental property in Chicago — a two-flat owned by a retiree, same as a 400-unit corporate building.</li>
-      <li>Scheduled for a City Council vote this fall; would take effect January 1, 2027.</li>
+      <li><span>Creates a citywide rental registry — owners pay a new annual fee to register every non-owner-occupied unit.
+        <a class="src" href="https://www.chicago.gov/city/en/depts/doh/provdrs/renters/svcs/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">City of Chicago</a></span></li>
+      <li><span>Requires "just cause" for eviction or lease non-renewal, with relocation assistance owed for no-fault reasons — reported at five months' rent or $5,000, whichever is greater, for major repairs, demolition, owner move-in or sale of the unit.
+        <a class="src" href="https://www.chicago.gov/city/en/depts/doh/provdrs/renters/svcs/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">City of Chicago</a>
+        <a class="src" href="https://blockclubchicago.org/2026/07/16/will-city-council-scale-back-mayors-proposed-protections-for-renters/" target="_blank" rel="noopener noreferrer">Block Club</a></span></li>
+      <li><span>Opens a new city office — the Bureau of Rental Housing Services — to process, investigate and enforce landlord-tenant complaints.
+        <a class="src" href="https://www.chicago.gov/city/en/depts/doh/provdrs/renters/svcs/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">City of Chicago</a></span></li>
+      <li><span>Applies citywide — a two-flat rented out by a retiree falls under it alongside a 400-unit corporate building.
+        <a class="src" href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/may/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">Mayor's Office</a>
+        <a class="src" href="https://blockclubchicago.org/2026/07/16/will-city-council-scale-back-mayors-proposed-protections-for-renters/" target="_blank" rel="noopener noreferrer">Block Club</a></span></li>
+      <li><span>Introduced to City Council on June 29, 2026 and awaiting a vote; the Mayor's Office says it would phase in over 12 to 24 months after passage.
+        <a class="src" href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/may/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">Mayor's Office</a></span></li>
     </ul>
-    <p class="facts-footnote">Summarized from the Mayor's Office announcement and City Council committee coverage.</p>
+    <p class="facts-footnote">Sources: the City of Chicago Department of Housing
+      <a href="https://www.chicago.gov/city/en/depts/doh/provdrs/renters/svcs/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">Protecting Renters Ordinance page</a>,
+      the Mayor's Office <a href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/may/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">announcement of June 29, 2026</a>, and
+      <a href="https://blockclubchicago.org/2026/07/16/will-city-council-scale-back-mayors-proposed-protections-for-renters/" target="_blank" rel="noopener noreferrer">Block Club Chicago's coverage</a> of the City Council committee negotiations. Every link opens in a new tab.</p>
   </section>
 
   <section id="why" class="why-matters">
@@ -455,9 +489,9 @@
     <div class="share-row">
       <span>Share with a neighbor</span>
       <div class="share-buttons">
-        <button type="button">Email</button>
-        <button type="button">Text</button>
-        <button type="button">Copy link</button>
+        <a id="share-email" href="#">Email</a>
+        <a id="share-text" href="#">Text</a>
+        <button id="share-copy" type="button">Copy link</button>
       </div>
     </div>
   </section>
@@ -466,5 +500,55 @@
     <p>Paid for by Illinois REALTORS.</p>
   </footer>
 </main>
+
+<script>
+(function () {
+  var url     = location.href.split('#')[0];
+  var subject = "Chicago's PRO ordinance will raise rents";
+  var body    = "Chicago's Protecting Renters Ordinance would raise rents and squeeze small "
+              + "building owners. Tell your Alderman to vote NO — it takes two minutes:\n\n" + url;
+
+  var email = document.getElementById('share-email');
+  if (email) {
+    email.href = 'mailto:?subject=' + encodeURIComponent(subject)
+               + '&body=' + encodeURIComponent(body);
+  }
+
+  var text = document.getElementById('share-text');
+  if (text) {
+    // "?&body=" is the form both iOS and Android Messages accept
+    text.href = 'sms:?&body=' + encodeURIComponent(body);
+  }
+
+  var copy = document.getElementById('share-copy');
+  if (copy) {
+    var label = copy.textContent;
+    var flash = function (msg) {
+      copy.textContent = msg;
+      setTimeout(function () { copy.textContent = label; }, 1800);
+    };
+    var legacy = function () {
+      var ta = document.createElement('textarea');
+      ta.value = url;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'absolute';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      if (ok) { flash('Copied!'); } else { window.prompt('Copy this link:', url); }
+    };
+    copy.addEventListener('click', function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { flash('Copied!'); }, legacy);
+      } else {
+        legacy();
+      }
+    });
+  }
+})();
+</script>
 </body>
 </html>
