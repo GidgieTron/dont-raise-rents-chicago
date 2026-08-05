@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Don't Raise Rents, Chicago!</title>
+<meta name="description" content="Mayor Johnson's Protecting Renters Ordinance (PRO) will raise your rent. Tell your Alderman to vote NO before the September 16 City Council vote.">
+<meta property="og:title" content="Don't Raise Rents, Chicago!">
+<meta property="og:description" content="Mayor Johnson's Protecting Renters Ordinance (PRO) will raise your rent. Tell your Alderman to vote NO.">
+<meta property="og:type" content="website">
+<style>
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{ color:inherit; }
+  img,svg{ max-width:100%; }
+
+  main{ display:block; }
+  .site-header{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+  .site-nav{ display:flex; align-items:center; gap:1.5rem; font-size:.92rem; }
+  .site-nav a{ text-decoration:none; }
+  .hero{ }
+  .eyebrow{ margin:0 0 .9rem; }
+  .hero h1{ margin:0 0 1.1rem; text-wrap:balance; }
+  .hero-sub{ max-width:52ch; text-wrap:pretty; }
+  .hero-actions{ display:flex; flex-wrap:wrap; gap:1rem; align-items:center; }
+  .btn-primary, .btn-secondary{ display:inline-flex; align-items:center; gap:.5rem; text-decoration:none; cursor:pointer; font:inherit; border:none; }
+  section{ padding:clamp(2.5rem,6vw,5rem) clamp(1.25rem,5vw,4rem); }
+  .facts h2, .why-matters h2, .take-action h2{ text-wrap:balance; }
+  .facts-list{ list-style:none; margin:0; padding:0; display:grid; gap:.9rem; }
+  .facts-list li{ display:flex; gap:.85rem; align-items:flex-start; }
+  .facts-footnote{ font-size:.85rem; max-width:64ch; }
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
+  .card{ }
+  .card-eyebrow{ margin:0 0 .6rem; }
+  .card h3{ margin:0 0 .7rem; text-wrap:balance; }
+  .take-action .lookup-form{ max-width:640px; }
+  .lookup-row{ display:flex; gap:.6rem; flex-wrap:wrap; }
+  .lookup-row input{ flex:1 1 240px; font:inherit; padding:.75rem .9rem; }
+  .lookup-hint{ font-size:.8rem; opacity:.65; margin:.5rem 0 0; }
+  .lookup-result{ margin-top:1rem; padding:.9rem 1.1rem; font-size:.92rem; }
+  details.script{ margin-top:1.5rem; max-width:640px; }
+  details.script summary{ cursor:pointer; font-weight:600; }
+  details.script p{ font-size:.92rem; line-height:1.6; }
+  .share-row{ margin-top:2rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap; font-size:.9rem; }
+  .share-buttons{ display:flex; gap:.5rem; }
+  .share-buttons button{ font:inherit; cursor:pointer; border-radius:999px; padding:.4rem .9rem; font-size:.82rem; }
+  .site-footer{ font-size:.8rem; opacity:.7; }
+  .site-footer p{ max-width:70ch; margin:0; }
+
+  /* URGENT & BOLD */
+  main{
+    --bg:#15110f; --bg-alt:#1e1916; --fg:#f3ede4; --fg-muted:#c7bcae;
+    --accent:#c23b1f; --accent-ink:#fff6ef; --accent-2:#d9a441; --border:rgba(243,237,229,.16);
+    background:var(--bg); color:var(--fg);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  main .stripe{
+    height:10px;
+    background:repeating-linear-gradient(135deg,var(--accent) 0 22px, var(--accent-2) 22px 44px);
+  }
+  main .site-header{
+    padding:1.4rem clamp(1.25rem,5vw,4rem); border-bottom:1px solid var(--border);
+  }
+  main .wordmark{
+    font-weight:900; font-size:1.15rem; letter-spacing:.02em; text-transform:uppercase;
+  }
+  main .site-nav a{ color:var(--fg-muted); }
+  main .site-nav a:hover{ color:var(--fg); }
+  main .nav-cta{
+    background:var(--accent); color:var(--accent-ink) !important; padding:.55rem 1.1rem;
+    font-weight:700; text-transform:uppercase; font-size:.78rem; letter-spacing:.04em;
+    clip-path:polygon(6% 0,100% 0,94% 100%,0 100%);
+  }
+  main .hero{ padding-top:clamp(3rem,8vw,6rem); }
+  main .eyebrow{
+    display:inline-block; font-weight:800; text-transform:uppercase; letter-spacing:.08em;
+    font-size:.78rem; color:var(--accent-2); border-left:3px solid var(--accent-2); padding-left:.6rem;
+  }
+  main .hero h1{
+    font-weight:900; text-transform:uppercase; letter-spacing:-.01em; line-height:.98;
+    font-size:clamp(2.6rem,6.4vw,5rem); max-width:16ch;
+  }
+  main .hero-sub{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
+  main .btn-primary{
+    background:var(--accent); color:var(--accent-ink); font-weight:800; text-transform:uppercase;
+    font-size:.85rem; letter-spacing:.03em; padding:1rem 1.6rem;
+    clip-path:polygon(4% 0,100% 0,96% 100%,0 100%);
+  }
+  main .btn-primary:hover{ background:#a72f18; }
+  main .btn-secondary{ color:var(--fg-muted); font-weight:700; padding:1rem 0; border-bottom:1px solid var(--border); }
+  main .btn-secondary:hover{ color:var(--fg); border-color:var(--fg); }
+  main .facts{ background:var(--bg-alt); }
+  main .facts h2{
+    font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3vw,2.3rem); margin:0 0 1.6rem;
+  }
+  main .facts-list li{ border-bottom:1px solid var(--border); padding-bottom:.9rem; }
+  main .facts-list li::before{
+    content:"▲"; color:var(--accent-2); font-size:.7rem; margin-top:.35rem;
+  }
+  main .facts-footnote{ color:var(--fg-muted); margin-top:1.4rem; }
+  main .why-matters h2{ font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3vw,2.3rem); margin:0 0 1.8rem; }
+  main .card{
+    background:var(--bg-alt); border:1px solid var(--border); border-top:5px solid var(--accent); padding:1.8rem;
+  }
+  main .card:nth-of-type(2){ border-top-color:var(--accent-2); }
+  main .card-eyebrow{ text-transform:uppercase; font-weight:800; font-size:.75rem; letter-spacing:.06em; color:var(--accent-2); }
+  main .card h3{ font-weight:800; font-size:1.35rem; }
+  main .card p{ color:var(--fg-muted); line-height:1.6; }
+  main .take-action{ background:var(--bg); }
+  main .take-action h2{ font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3vw,2.3rem); margin:0 0 .6rem; }
+  main .take-action > p{ color:var(--fg-muted); }
+  main .lookup-row input{
+    background:var(--bg-alt); border:1px solid var(--border); color:var(--fg); border-radius:2px;
+  }
+  main .lookup-row input::placeholder{ color:var(--fg-muted); }
+  main .lookup-result{ background:var(--bg-alt); border:1px solid var(--accent-2); color:var(--fg); }
+  main details.script{ color:var(--fg-muted); }
+  main details.script summary{ color:var(--fg); }
+  main .share-buttons button{ background:transparent; border:1px solid var(--border); color:var(--fg); }
+  main .site-footer{ padding:2rem clamp(1.25rem,5vw,4rem) 3rem; border-top:1px solid var(--border); }
+
+  @media (max-width:640px){
+    .site-header{ flex-wrap:wrap; }
+    .site-nav{ flex-wrap:wrap; gap:.9rem !important; }
+  }
+</style>
+</head>
+<body>
+<main id="page">
+  <div class="stripe"></div>
+  <header class="site-header">
+    <div class="wordmark">Don't Raise Rents, Chicago!</div>
+    <nav class="site-nav">
+      <a href="#ordinance">The Ordinance</a>
+      <a href="#why">Why It Matters</a>
+      <a href="#take-action" class="nav-cta">Contact Your Alderman</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Chicago City Council vote expected this fall</p>
+    <h1>Mayor Johnson's ordinance will raise your rent.</h1>
+    <p class="hero-sub">The Protecting Renters Ordinance (PRO) piles new fees, red tape, and eviction restrictions onto every rental property in Chicago — including the two-flat down the street. Landlords don't absorb costs like these. Renters do.</p>
+    <div class="hero-actions">
+      <a href="#take-action" class="btn-primary">Contact Your Alderman</a>
+      <a href="#ordinance" class="btn-secondary">See what's actually in PRO ↓</a>
+    </div>
+  </section>
+
+  <section id="ordinance" class="facts">
+    <h2>What PRO actually does</h2>
+    <ul class="facts-list">
+      <li>Creates a citywide rental registry — landlords pay a new annual fee to register every unit.</li>
+      <li>Requires "just cause" for eviction or lease non-renewal, with relocation assistance owed for no-fault reasons like renovation, demolition, or condo conversion.</li>
+      <li>Opens a new city office to investigate and enforce landlord-tenant complaints.</li>
+      <li>Applies to every rental property in Chicago — a two-flat owned by a retiree, same as a 400-unit corporate building.</li>
+      <li>Scheduled for a City Council vote this fall; would take effect January 1, 2027.</li>
+    </ul>
+    <p class="facts-footnote">Summarized from the Mayor's Office announcement and City Council committee coverage.</p>
+  </section>
+
+  <section id="why" class="why-matters">
+    <h2>Why it matters</h2>
+    <div class="cards">
+      <article class="card">
+        <p class="card-eyebrow">The math doesn't work</p>
+        <h3>Someone has to pay for the new fees and red tape. It won't be the landlord.</h3>
+        <p>New fees, eviction restrictions, and rehab penalties make it more expensive to own rental property — so landlords raise rents, sell their buildings, or stop renting altogether. Either way, Chicago renters end up with higher costs and fewer choices.</p>
+      </article>
+      <article class="card">
+        <p class="card-eyebrow">Generational wealth, at risk</p>
+        <h3>For many Black and Latino families, a small rental building is the path to ownership.</h3>
+        <p>A two-flat or three-flat is one of the few accessible ways for working families to build equity and pass property down. New costs and restrictions fall hardest on small owners who can least absorb them — pricing out the very families PRO claims to help.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="take-action" class="take-action">
+    <h2>Your Alderman decides. Tell them where you stand.</h2>
+    <p>Find your ward, then call or email in under two minutes.</p>
+    <form class="lookup-form" onsubmit="return false;">
+      <label for="addr">Your address or ZIP code</label>
+      <div class="lookup-row">
+        <input id="addr" type="text" placeholder="e.g. 60614 or 123 W Example St">
+        <button type="button" class="btn-primary" id="lookup-btn">Find My Alderman</button>
+      </div>
+      <p class="lookup-hint">Placeholder — this will connect to the live ward lookup once the Ujoin action is built.</p>
+      <div id="lookup-result" class="lookup-result" hidden>
+        Demo result: this box will show your ward, your Alderman's name, and one-click call/email options once connected to the city's ward-lookup data.
+      </div>
+    </form>
+
+    <details class="script">
+      <summary>Need the words? Use this script</summary>
+      <p>"Hi, I'm a resident in your ward. I'm calling to ask Alderman [Name] to vote NO on the Protecting Renters Ordinance. It adds new fees and red tape that will raise rents and push small landlords out of the business — please oppose it."</p>
+    </details>
+
+    <div class="share-row">
+      <span>Share with a neighbor</span>
+      <div class="share-buttons">
+        <button type="button">Email</button>
+        <button type="button">Text</button>
+        <button type="button">Copy link</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Paid for by Illinois REALTORS.</p>
+  </footer>
+</main>
+
+<script>
+  document.getElementById('lookup-btn').addEventListener('click', function(){
+    document.getElementById('lookup-result').hidden = false;
+  });
+</script>
+</body>
+</html>
