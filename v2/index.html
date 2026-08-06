@@ -42,7 +42,7 @@
   .site-nav{ display:flex; align-items:center; gap:1.5rem; font-size:.92rem; }
   .site-nav a{ text-decoration:none; }
   .hero{
-    display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);
+    display:grid; grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);
     gap:clamp(1.75rem,4vw,3.5rem); align-items:center;
   }
   .hero-copy{ min-width:0; }
@@ -119,7 +119,7 @@
   }
   main .hero h1{
     font-weight:900; text-transform:uppercase; letter-spacing:-.01em; line-height:.98;
-    font-size:clamp(2.2rem,5vw,4.4rem); max-width:24ch;
+    font-size:clamp(2.6rem,6.4vw,5rem); max-width:24ch;
   }
   main .hero-list{ font-family:'Permanent Marker', cursive; font-weight:400;
     letter-spacing:.01em; line-height:1.25; color:var(--accent);
@@ -536,7 +536,7 @@
         '.custom_field_div_wrapper            {display: block;}'+
         '.custom_field_div_wrapper_language   {display: inline-block; width: 88%; vertical-align: top;}'+
         '#ujoin_template_left          {display:block !important; float:none !important; width:100% !important; text-align:center !important;}'+'#ujoin_template_right         {display:block !important; float:none !important; width:100% !important; max-width:620px; margin:0 auto 40px auto !important;}'+'#ujoin_template_container     {max-width: 760px;}'+'.widgets-social               {text-align:center !important;}'+'.widgets-social-inner         {text-align:center !important;}'+'#ujoin_powered_by_div         {float:none !important; margin:24px auto !important;}'+'#ujoin_action_who_receives_title {text-align:center !important;}'+'#ujoin_action_who_receives    {text-align:center !important;}'+'#ujoin_action_who_receives p  {text-align:center !important;}'+'#ujoin_form_div               {text-align:left;}'+
-        '#ujoin_template_top           {display:flex !important; flex-direction:column !important;}'+'#ujoin_template_left          {order:2 !important;}'+'#ujoin_template_right         {order:1 !important;}'+'#ujoin_action_who_receives    {display:none !important;}'+'#ujoin_action_who_receives_designated {display:none !important;}'+
+        '#ujoin_template_top           {display:flex !important; flex-direction:column-reverse !important;}'+'#ujoin_template_left          {order:2 !important;}'+'#ujoin_template_right         {order:1 !important;}'+'#ujoin_action_who_receives    {display:none !important;}'+'#ujoin_action_who_receives_designated {display:none !important;}'+
         '';
 
         window.addEventListener('message', (event) => { if( event.origin.toLowerCase() === 'https://ujoin.co' || event.origin.toLowerCase() === 'https://stage.ujoin.co' ){ document.getElementById("UJOINIFRAME").style.height = parseInt(event.data) + 'px'; } }, false);
