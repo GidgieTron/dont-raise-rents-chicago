@@ -50,6 +50,7 @@
   .hero-art img{ display:block; width:100%; height:auto; }
   @media (max-width:900px){
     .hero{ grid-template-columns:1fr; }
+    .hero-art{ order:-1; margin-bottom:.5rem; }
   }
   .eyebrow{ margin:0 0 .9rem; }
   .hero h1{ margin:0 0 1.1rem; text-wrap:balance; }
@@ -63,9 +64,8 @@
   .facts-footnote{ font-size:.85rem; max-width:64ch; }
   .wordmark{ display:flex; align-items:center; gap:.65rem; }
   .wordmark img{ height:2.2em; width:auto; display:block; }
-  .hero-list{ list-style:none; margin:0 0 1.1rem; padding:0; counter-reset:h; }
-  .hero-list li{ counter-increment:h; }
-  .hero-list li::before{ content:counter(h) ") "; }
+  .hero-list{ list-style:none; margin:0 0 1.1rem; padding:0; }
+  .hero-list li::before{ content:"\2022"; margin-right:.4em; }
   .fact-head{ display:inline-block; margin-bottom:.35rem; }
   .srcs{ display:block; margin-top:.5rem; }
   .src{ font-size:.78rem; white-space:nowrap; }
@@ -133,7 +133,7 @@
   main .btn-secondary:hover{ color:var(--fg); border-color:var(--fg); }
   main .facts{ background:var(--bg-alt); }
   main .facts h2{
-    font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3vw,2.3rem); margin:0 0 1.6rem;
+    font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3.4vw,2.6rem); margin:0 0 1.6rem;
   }
   main .facts-list li{ border-bottom:1px solid var(--border); padding-bottom:.9rem; }
   main .facts-list li::before{
@@ -185,7 +185,12 @@
   <section class="hero">
     <div class="hero-copy">
       <p class="eyebrow">Chicago City Council vote expected this fall</p>
-      <h1>Mayor Johnson's ordinance will raise your rent.</h1>
+      <h1>Mayor Johnson's ordinance will</h1>
+      <ul class="hero-list">
+        <li>Raise Rents</li>
+        <li>Cause More Evictions</li>
+        <li>Waste Money</li>
+      </ul>
       <p class="hero-sub">The Protecting Renters Ordinance (PRO) adds new fees, red tape, and restrictions to every rental property in Chicago. Contact Your Alderman. See why to Say NO to PRO ↓</p>
       <div class="hero-actions">
         <a href="#take-action" class="btn-primary">Contact Your Alderman</a>
