@@ -68,7 +68,7 @@
   .hero-list li{ margin-bottom:.1rem; }
   .fact-head{ display:inline-block; margin-bottom:.35rem; }
   .srcs{ display:block; margin-top:.5rem; }
-  .cta-summary{ width:max-content; max-width:100%; margin:2.6rem auto .5rem; }
+  .cta-summary{ margin:2.6rem auto .5rem; text-align:center; }
   .cta-lead{ margin:0 0 .4rem; }
   .src{ font-size:.78rem; white-space:nowrap; }
   .src + .src{ margin-left:.5rem; }
@@ -121,7 +121,7 @@
     font-size:clamp(2.6rem,6.4vw,5rem); max-width:16ch;
   }
   main .hero-list{ font-family:'Permanent Marker', cursive; font-weight:400;
-    letter-spacing:.01em; line-height:1.25; color:var(--accent-2);
+    letter-spacing:.01em; line-height:1.25; color:var(--accent);
     font-size:clamp(1.6rem,3.2vw,2.4rem); }
   main .cta-lead{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
     line-height:1.06; font-size:clamp(1.5rem,3vw,2.2rem); color:var(--fg); }
@@ -142,7 +142,8 @@
   }
   main .facts-list li{ border-bottom:1px solid var(--border); padding-bottom:.9rem;
     font-size:1.08rem; line-height:1.6; }
-  main .facts-list strong{ color:var(--accent-2); font-weight:800; }
+  main .facts-list strong{ color:inherit; font-weight:800; }
+  main .facts-list strong.hl{ color:var(--accent-2); }
   main .facts-list li::before{
     content:"▲"; color:var(--accent-2); font-size:.7rem; margin-top:.35rem;
   }
@@ -238,7 +239,7 @@
         The <strong>NEW</strong> Bureau of Rental Housing Services Will Be <strong>WATCHING YOU</strong>.
         <span class="srcs"><a class="src" href="https://blockclubchicago.org/2026/07/16/will-city-council-scale-back-mayors-proposed-protections-for-renters/" target="_blank" rel="noopener noreferrer">Block Club</a></span></span></li>
       <li><span><strong class="fact-head">Coming Soon</strong><br>
-        Introduced on <strong>June 29, 2026</strong>.<br>
+        Introduced on <strong class="hl">June 29, 2026</strong>.<br>
         This Nightmare Will Take Effect <strong>12 to 24 Months</strong> After It Passes.
         <span class="srcs"><a class="src" href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/may/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">Mayor's Office</a></span></span></li>
     </ul>
