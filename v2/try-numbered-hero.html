@@ -161,7 +161,7 @@
     font-size:clamp(1.3rem,2.3vw,1.7rem); line-height:1.15; }
   main .card h3{ font-weight:800; font-size:1.35rem; }
   main .card p{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
-  main .take-action{ background:var(--bg); }
+  main .take-action{ background:var(--bg-alt); padding-top:clamp(3rem,6vw,5rem); }
   main .take-action h2{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
     font-size:clamp(2.4rem,5.6vw,4.4rem); line-height:.98; margin:0 0 1rem; text-align:center; }
   main .take-action > p{ color:var(--fg-muted); font-size:clamp(1.1rem,1.7vw,1.4rem);
@@ -258,6 +258,7 @@
     </div>
   </section>
 
+  <div class="stripe"></div>
   <section id="take-action" class="take-action">
     <h2>Tell Your Alderman<br><strong>NO to PRO!</strong></h2>
     <p>call / email in under two minutes.</p>
@@ -328,13 +329,13 @@
         ujoin_pass_text.ujoin_action_who_receives          = "";
 
         ujoin_css = ''+
-        'body                          {margin:0px; padding:0px; text-decoration:none; font-size: 20px; font-style: normal; font-family: "Roboto Condensed", sans-serif; background-color:#15110f; }'+
+        'body                          {margin:0px; padding:0px; text-decoration:none; font-size: 20px; font-style: normal; font-family: "Roboto Condensed", sans-serif; background-color:#1e1916; }'+
         '#ujoin_float_obj              {display: none;}'+
         '#ujoin_template_container     { display: block; max-width: 1140px; margin: 0px auto; }'+
         '#ujoin_template_left          { display: block; float: left; vertical-align: text-top; width: 49%; background-color:transparent; }'+
         '#ujoin_template_right         { display: block; float: right; vertical-align: text-top; background-color: #1e1916; width: 40%; \
         	border-radius: 0px; box-shadow: none; word-wrap: break-word; text-align: left; \
-        	margin: 50px 10px 50px 0px; border:1px solid rgba(243,237,229,.16); background-color:#1e1916; padding: 30px; \
+        	margin: 50px 10px 50px 0px; border:1px solid rgba(243,237,229,.16); background-color:#15110f; padding: 30px; \
         	font-family: Lato, sans-serif; font-size: 1rem; font-weight: 400; color: rgba(243,237,229,.85);\
         }'+
         '#ujoin_template_top           { display: block; height: 100%; width: 100%; overflow: hidden; }'+
@@ -365,7 +366,7 @@
         '.ujoin_pathway_prev                   { display: none;  left: 0px; }'+
         '.ujoin_pathway_next                   { display: none; right: 0px; }'+
         '#ujoin_bill_container            { display:block; position: relative; margin: 0px auto 50px auto; font-family: "lato", sans-serif; }'+
-        '.bill-data-bar                   { background:#1e1916; box-shadow:none; border:1px solid rgba(243,237,229,.16); z-index: 100; position: relative; clear: both; margin-bottom: 10px; }'+
+        '.bill-data-bar                   { background:#15110f; box-shadow:none; border:1px solid rgba(243,237,229,.16); z-index: 100; position: relative; clear: both; margin-bottom: 10px; }'+
         '.bill-data-expanded              { display: none; }'+
         'img.legislator-photo             { height: 65px; width: 55px; margin-bottom: 7px; border-radius: 30px; margin-left: -12px; }'+
         'img.party-tag                    { position: relative; z-index: 100; margin-right: -6px; margin-bottom: 4px; }'+
