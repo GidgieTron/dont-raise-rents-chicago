@@ -42,7 +42,7 @@
   .site-nav{ display:flex; align-items:center; gap:1.5rem; font-size:.92rem; }
   .site-nav a{ text-decoration:none; }
   .hero{
-    display:grid; grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);
+    display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);
     gap:clamp(1.75rem,4vw,3.5rem); align-items:center;
   }
   .hero-copy{ min-width:0; }
@@ -60,7 +60,7 @@
   section{ padding:clamp(2.5rem,6vw,5rem) clamp(1.25rem,5vw,4rem); }
   .facts h2, .why-matters h2, .take-action h2{ text-wrap:balance; }
   .facts-list{ list-style:none; margin:0; padding:0; display:grid; gap:.9rem; }
-  .facts-list li{ display:flex; gap:.85rem; align-items:flex-start; }
+  .facts-list li{ display:block; }
   .facts-footnote{ font-size:.85rem; max-width:64ch; }
   .wordmark{ display:flex; align-items:center; gap:.65rem; }
   .wordmark img{ height:2.2em; width:auto; display:block; }
@@ -118,7 +118,7 @@
   }
   main .hero h1{
     font-weight:900; text-transform:uppercase; letter-spacing:-.01em; line-height:.98;
-    font-size:clamp(2.6rem,6.4vw,5rem); max-width:24ch;
+    font-size:clamp(2.2rem,5vw,4.4rem); max-width:24ch;
   }
   main .hero-list{ font-family:'Permanent Marker', cursive; font-weight:400;
     letter-spacing:.01em; line-height:1.25; color:var(--accent);
@@ -144,9 +144,7 @@
     font-size:1.08rem; line-height:1.6; }
   main .facts-list strong{ color:inherit; font-weight:800; }
   main .facts-list strong.hl{ color:var(--accent-2); }
-  main .facts-list li::before{
-    content:"▲"; color:var(--accent-2); font-size:.7rem; margin-top:.35rem;
-  }
+
   main .fact-head{ color:var(--accent-2); font-family:'Permanent Marker', cursive;
     font-weight:400; letter-spacing:.01em; font-size:clamp(1.3rem,2.3vw,1.7rem); line-height:1.15; }
   main .facts-footnote{ color:var(--fg-muted); margin-top:1.4rem; }
