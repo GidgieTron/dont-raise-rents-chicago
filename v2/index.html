@@ -68,7 +68,7 @@
   .hero-list li::before{ content:"\2022"; margin-right:.4em; }
   .fact-head{ display:inline-block; margin-bottom:.35rem; }
   .srcs{ display:block; margin-top:.5rem; }
-  .cta-summary{ margin:2.2rem 0 .5rem; }
+  .cta-summary{ width:max-content; max-width:100%; margin:2.6rem auto .5rem; }
   .cta-lead{ margin:0 0 .4rem; }
   .src{ font-size:.78rem; white-space:nowrap; }
   .src + .src{ margin-left:.5rem; }
@@ -162,8 +162,10 @@
   main .card h3{ font-weight:800; font-size:1.35rem; }
   main .card p{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
   main .take-action{ background:var(--bg); }
-  main .take-action h2{ font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3vw,2.3rem); margin:0 0 .6rem; text-align:center; }
-  main .take-action > p{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; text-align:center; }
+  main .take-action h2{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
+    font-size:clamp(2.4rem,5.6vw,4.4rem); line-height:.98; margin:0 0 1rem; text-align:center; }
+  main .take-action > p{ color:var(--fg-muted); font-size:clamp(1.1rem,1.7vw,1.4rem);
+    line-height:1.5; text-align:center; }
   main details.script{ color:var(--fg-muted); }
   main details.script summary{ color:var(--fg); }
   main .share-buttons button,
@@ -193,12 +195,7 @@
   <section class="hero">
     <div class="hero-copy">
       <p class="eyebrow">Chicago City Council vote expected this fall</p>
-      <h1>Mayor Johnson's ordinance will</h1>
-      <ul class="hero-list">
-        <li>Raise Rents</li>
-        <li>Cause Evictions</li>
-        <li>Waste Money</li>
-      </ul>
+      <h1>Mayor Johnson's ordinance will raise rents</h1>
       <p class="hero-sub">The Protecting Renters Ordinance (PRO) adds new fees, red tape, and restrictions to every rental property in Chicago. Contact Your Alderman. See why to Say NO to PRO ↓</p>
       <div class="hero-actions">
         <a href="#take-action" class="btn-primary">Contact Your Alderman</a>
@@ -325,7 +322,7 @@
         ujoin_pass_text.opt_in                 = "";
         ujoin_pass_text.signer_receipt         = "";
         ujoin_pass_text.action_title_text      = "";
-        ujoin_pass_text.action_body_text       = "";
+        ujoin_pass_text.action_body_text       = "Please vote NO on the Protecting Renters Ordinance (PRO) when it reaches the Council this fall. I live in your ward, and I don't think this ordinance does what it promises.\n\nNew registration fees, eviction restrictions, and rehab penalties raise the cost of owning rental property in Chicago. Landlords don't just absorb costs like that \u2014 they raise rents, sell buildings, or exit the rental market altogether. Renters end up paying the price either way.\n\nIt's also a one-size-fits-all rule: a family running a two-flat faces the same requirements as a large corporate landlord. For a lot of families, that two-flat is how they've built wealth and passed property down. PRO's new costs put that at risk.";
         ujoin_pass_text.thank_you_click_here_text = "";
         ujoin_pass_text.ujoin_action_who_receives_title    = "Send A Message To Your City Council";
         ujoin_pass_text.ujoin_action_who_receives          = "";
@@ -413,7 +410,7 @@
         '#altered_subject              { width: 100%; }'+
         '#ujoin_action_salut_start     {display:block; color:#c7bcae; font-weight: bold; text-align: left;}'+
         '#ujoin_action_salut_start_default { display:block; font-size: 13px; }'+
-        '#ujoin_action_body_div        {display:block; color:#c7bcae; margin: 10px; }'+
+        '#ujoin_action_body_div        {display:block; color:#c7bcae; margin: 10px; white-space: pre-line; }'+
         '#ujoin_action_salut_stop      {display:block; color:#c7bcae; font-weight: bold; text-align: left; margin-bottom: 20px; }'+
         '#ujoin_action_salut_stop_text {margin-bottom: 20px;}'+
         '::-webkit-input-placeholder   {color:#858585; font-family: "Roboto", "Open Sans", Arial, sans-serif; font-size: 18px;}'+
