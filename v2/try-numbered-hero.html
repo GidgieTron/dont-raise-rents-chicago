@@ -70,8 +70,8 @@
   .hero-list li{ margin-bottom:.1rem; }
   .fact-head{ display:inline-block; margin-bottom:.35rem; }
   .srcs{ display:block; margin-top:.5rem; }
-  .cta-summary{ margin:2.6rem auto .5rem; text-align:center; }
-  .cta-lead{ margin:0 0 .4rem; }
+  .cta-lead{ margin:1.7rem auto .7rem; max-width:31ch; text-align:center; }
+  .cta-fine{ margin:0 auto; text-align:center; }
   .src{ font-size:.78rem; white-space:nowrap; }
   .src + .src{ margin-left:.5rem; }
   .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
@@ -125,8 +125,6 @@
   main .hero-list{ font-family:'Permanent Marker', cursive; font-weight:400;
     letter-spacing:.01em; line-height:1.25; color:var(--accent);
     font-size:clamp(1.6rem,3.2vw,2.4rem); }
-  main .cta-lead{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
-    line-height:1.06; font-size:clamp(1.5rem,3vw,2.2rem); color:var(--fg); }
   main .cta-summary .hero-list{ font-size:clamp(1.6rem,3.2vw,2.4rem); }
   main .card h3 strong, main .take-action h2 strong{ color:var(--accent-2); }
   main .hero-sub{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
@@ -165,10 +163,15 @@
   main .card h3{ font-weight:800; font-size:1.35rem; }
   main .card p{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
   main .take-action{ background:var(--bg-alt); padding-top:clamp(3rem,6vw,5rem); }
-  main .take-action h2{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
-    font-size:clamp(2.4rem,5.6vw,4.4rem); line-height:.98; margin:0 0 1rem; text-align:center; }
-  main .take-action > p{ color:var(--fg-muted); font-size:clamp(1.1rem,1.7vw,1.4rem);
-    line-height:1.5; text-align:center; }
+  main .take-action h2{ font-weight:800; font-size:clamp(1.7rem,3.2vw,2.6rem);
+    line-height:1.1; letter-spacing:0; margin:0; text-align:center; color:var(--fg); }
+  main .take-action h2 strong{ display:block; color:var(--accent-2);
+    font-weight:900; font-size:clamp(3.2rem,7.2vw,6rem); line-height:.95;
+    letter-spacing:-.02em; margin-top:.1em; }
+  main .cta-lead{ font-weight:800; font-size:clamp(1.5rem,2.9vw,2.3rem);
+    line-height:1.15; color:var(--fg); }
+  main .cta-fine{ font-size:clamp(.95rem,1.4vw,1.15rem); color:var(--fg-muted);
+    line-height:1.5; }
   main details.script{ color:var(--fg-muted); }
   main details.script summary{ color:var(--fg); }
   main .share-buttons button,
@@ -264,12 +267,9 @@
 
   <div class="stripe"></div>
   <section id="take-action" class="take-action">
-    <h2>Tell Your Alderman<br><strong>NO to PRO!</strong></h2>
-    <p>call / email in under two minutes.</p>
-    <div class="cta-summary">
-      <p class="cta-lead">Mayor Johnson's ordinance will</p>
-      <p class="hero-list">Raise Rents, Cause Evictions, Waste Money</p>
-    </div>
+        <h2>Tell Your Alderman&hellip;<strong>NO to PRO!</strong></h2>
+    <p class="cta-lead">Mayor Johnson's Ordinance Will Raise Rents, Cause Evictions, Waste Money</p>
+    <p class="cta-fine">Call / Email in Under Two Minutes.</p>
     <div id="ujoin_action_embed">
       <script type="application/javascript">
         ujoin_pass_fonts = ''+
