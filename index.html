@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <title>Chicago Renters Tax</title>
 <meta name="description" content="Mayor Johnson's Protecting Renters Ordinance (PRO) will raise your rent. Tell your Alderman to vote NO before the City Council vote this fall.">
 <link rel="canonical" href="https://dontraiserents.com/">
@@ -188,6 +189,57 @@
 </style>
 </head>
 <body>
+<style>
+  #pw-gate{ position:fixed; inset:0; z-index:9999; background:#15110f; display:flex; align-items:center; justify-content:center; padding:1.5rem; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
+  #pw-gate.unlocked{ display:none; }
+  #pw-gate-box{ max-width:360px; width:100%; text-align:center; }
+  #pw-gate-box h1{ color:#f3ede4; font-size:1.3rem; margin:0 0 .5rem; }
+  #pw-gate-box p{ color:#c7bcae; font-size:.9rem; margin:0 0 1.5rem; }
+  #pw-gate-box input{ width:100%; padding:.8rem 1rem; font-size:1rem; border:1px solid rgba(243,237,229,.3); background:#1e1916; color:#f3ede4; border-radius:2px; box-sizing:border-box; margin-bottom:.8rem; }
+  #pw-gate-box button{ width:100%; padding:.8rem 1rem; font-size:.9rem; font-weight:800; text-transform:uppercase; letter-spacing:.03em; background:#c23b1f; color:#fff6ef; border:none; cursor:pointer; }
+  #pw-gate-error{ color:#d9a441; font-size:.82rem; margin-top:.6rem; min-height:1.2em; }
+  #page{ display:none; }
+  #page.unlocked{ display:block; }
+</style>
+<div id="pw-gate">
+  <div id="pw-gate-box">
+    <h1>Chicago Renters Tax</h1>
+    <p>Internal preview — enter the password shared with you to continue.</p>
+    <input type="password" id="pw-gate-input" placeholder="Password" autocomplete="off">
+    <button type="button" id="pw-gate-submit">Enter</button>
+    <div id="pw-gate-error"></div>
+  </div>
+</div>
+<script>
+(function(){
+  var STORAGE_KEY = 'crt_preview_unlocked_v1';
+  var PASSWORD_HASH = '28f3562da5d38f12558a36a0a6c5fcb6cee0fb5fbbd17eb418e87ca29c2a9ad';
+  function sha256(str){
+    var enc = new TextEncoder().encode(str);
+    return crypto.subtle.digest('SHA-256', enc).then(function(buf){
+      return Array.prototype.map.call(new Uint8Array(buf), function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+    });
+  }
+  function unlock(){
+    document.getElementById('pw-gate').classList.add('unlocked');
+    document.getElementById('page').classList.add('unlocked');
+  }
+  if (localStorage.getItem(STORAGE_KEY) === '1') { unlock(); }
+  document.getElementById('pw-gate-submit').addEventListener('click', check);
+  document.getElementById('pw-gate-input').addEventListener('keydown', function(e){ if (e.key === 'Enter') check(); });
+  function check(){
+    var val = document.getElementById('pw-gate-input').value;
+    sha256(val).then(function(hash){
+      if (hash === PASSWORD_HASH) {
+        localStorage.setItem(STORAGE_KEY, '1');
+        unlock();
+      } else {
+        document.getElementById('pw-gate-error').textContent = 'Incorrect password.';
+      }
+    });
+  }
+})();
+</script>
 <main id="page">
   <div class="stripe"></div>
   <header class="site-header">
