@@ -76,10 +76,10 @@
   .card{ }
   .card-eyebrow{ margin:0 0 .6rem; }
   .card h3{ margin:0 0 .7rem; text-wrap:balance; }
-  details.script{ margin-top:1.5rem; max-width:640px; }
+  details.script{ margin-top:1.5rem; max-width:640px; margin-left:auto; margin-right:auto; text-align:center; }
   details.script summary{ cursor:pointer; font-weight:600; }
   details.script p{ font-size:.92rem; line-height:1.6; }
-  .share-row{ margin-top:2rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap; font-size:.9rem; }
+  .share-row{ margin-top:2rem; display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap; font-size:.9rem; }
   .share-buttons{ display:flex; gap:.5rem; flex-wrap:wrap; }
   .share-buttons button,
   .share-buttons a{ font:inherit; cursor:pointer; border-radius:999px; padding:.4rem .9rem; font-size:.82rem; text-decoration:none; display:inline-block; }
@@ -540,6 +540,7 @@
         '.custom_field_insert_body input[type="radio"]              { display:inline-block; margin: 0px 0px 0px 15px; width: 15px; float: none; }'+
         '.custom_field_div_wrapper            {display: block;}'+
         '.custom_field_div_wrapper_language   {display: inline-block; width: 88%; vertical-align: top;}'+
+        '#ujoin_template_left          {display:block !important; float:none !important; width:100% !important; text-align:center !important;}'+'#ujoin_template_right         {display:block !important; float:none !important; width:100% !important; max-width:620px; margin:0 auto 40px auto !important;}'+'#ujoin_template_container     {max-width: 760px;}'+'.widgets-social               {text-align:center !important;}'+'.widgets-social-inner         {text-align:center !important;}'+'#ujoin_powered_by_div         {float:none !important; margin:24px auto !important;}'+'#ujoin_action_who_receives_title {text-align:center !important;}'+'#ujoin_action_who_receives    {text-align:center !important;}'+'#ujoin_action_who_receives p  {text-align:center !important;}'+'#ujoin_form_div               {text-align:left;}'+
         '';
 
         window.addEventListener('message', (event) => { if( event.origin.toLowerCase() === 'https://ujoin.co' || event.origin.toLowerCase() === 'https://stage.ujoin.co' ){ document.getElementById("UJOINIFRAME").style.height = parseInt(event.data) + 'px'; } }, false);
