@@ -68,6 +68,8 @@
   .hero-list li::before{ content:"\2022"; margin-right:.4em; }
   .fact-head{ display:inline-block; margin-bottom:.35rem; }
   .srcs{ display:block; margin-top:.5rem; }
+  .cta-summary{ margin:2.2rem 0 .5rem; }
+  .cta-lead{ margin:0 0 .4rem; }
   .src{ font-size:.78rem; white-space:nowrap; }
   .src + .src{ margin-left:.5rem; }
   .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
@@ -121,6 +123,9 @@
   main .hero-list{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
     line-height:1.06; font-size:clamp(1.6rem,3.4vw,2.6rem); }
   main .hero-list li::before{ color:var(--accent-2); }
+  main .cta-lead{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
+    line-height:1.06; font-size:clamp(1.5rem,3vw,2.2rem); color:var(--fg); }
+  main .cta-summary .hero-list{ font-size:clamp(1.5rem,3vw,2.2rem); }
   main .card h3 strong, main .take-action h2 strong{ color:var(--accent-2); }
   main .hero-sub{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
   main .btn-primary{
@@ -151,8 +156,9 @@
     background:var(--bg-alt); border:1px solid var(--border); border-top:5px solid var(--accent); padding:1.8rem;
   }
   main .card:nth-of-type(2){ border-top-color:var(--accent-2); }
-  main .card-eyebrow{ color:var(--accent-2); font-family:'Permanent Marker', cursive;
-    font-weight:400; letter-spacing:.01em; font-size:clamp(1.15rem,1.9vw,1.45rem); line-height:1.15; }
+  main .card p.card-eyebrow{ color:var(--accent-2); font-family:'Permanent Marker', cursive;
+    font-weight:400; text-transform:uppercase; letter-spacing:.01em;
+    font-size:clamp(1.3rem,2.3vw,1.7rem); line-height:1.15; }
   main .card h3{ font-weight:800; font-size:1.35rem; }
   main .card p{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
   main .take-action{ background:var(--bg); }
@@ -258,6 +264,14 @@
   <section id="take-action" class="take-action">
     <h2>Tell Your Alderman<br><strong>NO to PRO!</strong></h2>
     <p>call / email in under two minutes.</p>
+    <div class="cta-summary">
+      <p class="cta-lead">Mayor Johnson's ordinance will</p>
+      <ul class="hero-list">
+        <li>Raise Rents</li>
+        <li>Cause Evictions</li>
+        <li>Waste Money</li>
+      </ul>
+    </div>
     <div id="ujoin_action_embed">
       <script type="application/javascript">
         ujoin_pass_fonts = ''+
@@ -496,7 +510,7 @@
         '.widgets-social                    { margin: 20px 0px; }'+
         '.widgets-social-inner              { text-align: left !important; }'+
         '.stMainServices                    { border-radius: 2px !important; }'+
-        '#ujoin_action_summary_container    {margin: 30px 0px 50px 0px; }'+
+        '#ujoin_action_summary_container    {display:none;}'+
         '#ujoin_action_summary_container a  { color: inherit; }'+
         '#ujoin_action_summary_title        {display:none;}'+
         '#ujoin_action_summary              {display:block;  text-align: left; font-family: Lato, sans-serif; font-size: 1.2rem; font-weight: 400; color: rgba(243,237,229,.9);  overflow-wrap:break-word;}'+
