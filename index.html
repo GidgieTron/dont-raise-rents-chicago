@@ -50,7 +50,7 @@
   @media (max-width:900px){
     .hero{ grid-template-columns:1fr; }
     br.wide{ display:none; }
-    .hero-art{ order:-1; margin-bottom:.5rem; }
+    .hero-art{ display:none; }
   }
   .eyebrow{ margin:0 0 .9rem; }
   .hero h1{ margin:0 0 1.1rem; text-wrap:balance; }
@@ -208,17 +208,7 @@
         <a href="#ordinance" class="btn-secondary">Why Say NO to PRO? ↓</a>
       </div>
     </div>
-    <figure class="hero-art">
-      <picture>
-        <source type="image/webp" srcset="hero-cartoon-700.webp 700w, hero-cartoon.webp 1200w"
-                sizes="(max-width:900px) 92vw, 45vw">
-        <img src="hero-cartoon.jpg"
-             srcset="hero-cartoon-700.jpg 700w, hero-cartoon.jpg 1200w"
-             sizes="(max-width:900px) 92vw, 45vw"
-             width="1200" height="1200" decoding="async"
-             alt="Editorial cartoon: the Mayor, in a top hat and sash reading MAYOR, carries a sack marked CITY REVENUE down a burning Chicago street, holding a PRO RENT INCREASE scroll and stepping over a placard reading LOCAL RENT LAWS, while residents hold signs reading WE CAN'T PAY and NO to PRO!">
-      </picture>
-    </figure>
+    <figure class="hero-art" aria-hidden="true"></figure>
   </section>
 
   <section id="ordinance" class="facts">
