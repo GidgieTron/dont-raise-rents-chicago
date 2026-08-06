@@ -65,7 +65,7 @@
   .wordmark{ display:flex; align-items:center; gap:.65rem; }
   .wordmark img{ height:2.2em; width:auto; display:block; }
   .hero-list{ list-style:none; margin:0 0 1.1rem; padding:0; }
-  .hero-list li::before{ content:"\2022"; margin-right:.4em; }
+  .hero-list li{ margin-bottom:.1rem; }
   .fact-head{ display:inline-block; margin-bottom:.35rem; }
   .srcs{ display:block; margin-top:.5rem; }
   .cta-summary{ width:max-content; max-width:100%; margin:2.6rem auto .5rem; }
@@ -120,12 +120,12 @@
     font-weight:900; text-transform:uppercase; letter-spacing:-.01em; line-height:.98;
     font-size:clamp(2.6rem,6.4vw,5rem); max-width:16ch;
   }
-  main .hero-list{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
-    line-height:1.06; font-size:clamp(1.6rem,3.4vw,2.6rem); }
-  main .hero-list li::before{ color:var(--accent-2); }
+  main .hero-list{ font-family:'Permanent Marker', cursive; font-weight:400;
+    letter-spacing:.01em; line-height:1.25; color:var(--accent-2);
+    font-size:clamp(1.6rem,3.2vw,2.4rem); }
   main .cta-lead{ font-weight:900; text-transform:uppercase; letter-spacing:-.01em;
     line-height:1.06; font-size:clamp(1.5rem,3vw,2.2rem); color:var(--fg); }
-  main .cta-summary .hero-list{ font-size:clamp(1.5rem,3vw,2.2rem); }
+  main .cta-summary .hero-list{ font-size:clamp(1.6rem,3.2vw,2.4rem); }
   main .card h3 strong, main .take-action h2 strong{ color:var(--accent-2); }
   main .hero-sub{ color:var(--fg-muted); font-size:1.08rem; line-height:1.6; }
   main .btn-primary{
@@ -142,6 +142,7 @@
   }
   main .facts-list li{ border-bottom:1px solid var(--border); padding-bottom:.9rem;
     font-size:1.08rem; line-height:1.6; }
+  main .facts-list strong{ color:var(--accent-2); font-weight:800; }
   main .facts-list li::before{
     content:"▲"; color:var(--accent-2); font-size:.7rem; margin-top:.35rem;
   }
@@ -175,8 +176,10 @@
   main .site-footer{ padding:2rem clamp(1.25rem,5vw,4rem) 3rem; border-top:1px solid var(--border); color:var(--fg); }
 
   @media (max-width:640px){
-    .site-header{ flex-wrap:wrap; }
-    .site-nav{ flex-wrap:wrap; gap:.9rem !important; }
+    .site-header{ flex-wrap:wrap; justify-content:center; }
+    .wordmark{ width:100%; justify-content:center; text-align:center; }
+    .site-nav{ flex-wrap:nowrap; gap:.85rem !important; width:100%; justify-content:center; }
+    main .nav-cta{ padding:.5rem .8rem; font-size:.72rem; white-space:nowrap; }
   }
 </style>
 </head>
@@ -186,8 +189,8 @@
   <header class="site-header">
     <div class="wordmark"><img src="chicago-flag.png" alt="" width="330" height="220"><span>Don't Raise Rents, Chicago!</span></div>
     <nav class="site-nav">
-      <a href="#ordinance">The Ordinance</a>
-      <a href="#why">Why it Matters?</a>
+      <a href="#ordinance">Ordinance</a>
+      <a href="#why">Why?</a>
       <a href="#take-action" class="nav-cta">Contact Your Alderman</a>
     </nav>
   </header>
@@ -219,24 +222,24 @@
     <h2>Why Say NO to PRO?</h2>
     <ul class="facts-list">
       <li><span><strong class="fact-head">More Evictions</strong><br>
-        More hurdles to ownership = More corporate landlords.<br>
-        Corporate landlords file for evictions at significantly higher rates.<br>
-        Often roughly 2 to 4 times as much when compared to smaller individual owners.
+        More Hurdles to Ownership = More Corporate Landlords.<br>
+        Corporate Landlords File for Evictions at Significantly Higher Rates.<br>
+        Often Roughly <strong>2 to 4 Times</strong> as Much When Compared to Smaller Individual Owners.
         <span class="srcs"><a class="src" href="https://archive-housingmatters.urban.org/research-summary/do-large-landlords-eviction-practices-differ-small-landlords" target="_blank" rel="noopener noreferrer">Urban Institute</a>
           <a class="src" href="https://thebeaconnews.org/stories/2025/06/13/kansas-city-corporate-landlords-evictions-lisc-study/" target="_blank" rel="noopener noreferrer">LISC Kansas City</a></span></span></li>
       <li><span><strong class="fact-head">Wasted Money</strong><br>
-        Est. $20,000,000.00 per year for 80-100 employees at the NEW Bureau of Rental Housing Services.<br>
-        That’s $200,000 to $250,000 per employee to track and enforce their new rules.
+        Est. <strong>$20,000,000.00</strong> Per Year for <strong>80-100</strong> Employees at the <strong>NEW</strong> Bureau of Rental Housing Services.<br>
+        That’s <strong>$200,000 to $250,000</strong> Per Employee to Track and Enforce Their New Rules.
         <span class="srcs"><a class="src" href="https://chicago.suntimes.com/real-estate/2026/05/29/mayor-brandon-johnson-ordinance-protects-chicago-renters-housing" target="_blank" rel="noopener noreferrer">Sun-Times</a></span></span></li>
       <li><span><strong class="fact-head">No Escape</strong><br>
         Every Unit Citywide Must Be Registered and Tracked for Enforcement.<br>
-        YES, the Apartment Above Your Garage Counts.<br>
-        YES, Your Basement Apartment Counts.<br>
-        The NEW Bureau of Rental Housing Services Will Be WATCHING YOU.
+        <strong>YES</strong>, the Apartment Above Your Garage Counts.<br>
+        <strong>YES</strong>, Your Basement Apartment Counts.<br>
+        The <strong>NEW</strong> Bureau of Rental Housing Services Will Be <strong>WATCHING YOU</strong>.
         <span class="srcs"><a class="src" href="https://blockclubchicago.org/2026/07/16/will-city-council-scale-back-mayors-proposed-protections-for-renters/" target="_blank" rel="noopener noreferrer">Block Club</a></span></span></li>
-      <li><span><strong class="fact-head">COMING SOON</strong><br>
-        Introduced on June 29, 2026.<br>
-        This Nightmare Will Take Effect 12 to 24 Months After It Passes.
+      <li><span><strong class="fact-head">Coming Soon</strong><br>
+        Introduced on <strong>June 29, 2026</strong>.<br>
+        This Nightmare Will Take Effect <strong>12 to 24 Months</strong> After It Passes.
         <span class="srcs"><a class="src" href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/may/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">Mayor's Office</a></span></span></li>
     </ul>
     <p class="facts-footnote">Summarized from the <a href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/may/protecting-renters-ordinance.html" target="_blank" rel="noopener noreferrer">Mayor's Office announcement</a> and <a href="https://blockclubchicago.org/2026/07/16/will-city-council-scale-back-mayors-proposed-protections-for-renters/" target="_blank" rel="noopener noreferrer">City Council committee coverage</a>.</p>
