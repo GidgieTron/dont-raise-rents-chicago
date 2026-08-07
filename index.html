@@ -213,7 +213,7 @@
 <script>
 (function(){
   var STORAGE_KEY = 'crt_preview_unlocked_v1';
-  var PASSWORD_HASH = '28f3562da5d38f12558a36a0a6c5fcb6cee0fb5fbbd17eb418e87ca29c2a9ad';
+  var PASSWORD_HASH = '28f3562da5d38f12558a36a0a6c5fcb6cee0fb5fbbd17eb418e87ca29c2a9adb';
   function sha256(str){
     var enc = new TextEncoder().encode(str);
     return crypto.subtle.digest('SHA-256', enc).then(function(buf){
